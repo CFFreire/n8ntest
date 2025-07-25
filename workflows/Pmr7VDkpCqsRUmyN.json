@@ -1,0 +1,80 @@
+{
+  "id": "Pmr7VDkpCqsRUmyN",
+  "name": "Workfow2 prod",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "d2111bab-68b8-41eb-96b1-2f228b419899",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.chatTrigger",
+      "typeVersion": 1.1,
+      "position": [
+        208,
+        0
+      ],
+      "id": "bf2b3e01-a36f-40a7-abf1-b32582bec095",
+      "name": "When chat message received",
+      "webhookId": "92579e69-3180-4cc8-a7ef-1857edea03c2"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 2.1,
+      "position": [
+        416,
+        0
+      ],
+      "id": "9ccfdabe-165b-4938-99a6-3bc433ba80d2",
+      "name": "AI Agent"
+    }
+  ],
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "When chat message received": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "triggerCount": 0,
+  "versionId": "38ee2241-9359-4dae-9885-9f80a9d67007",
+  "owner": {
+    "type": "team",
+    "teamId": "maRdd8WJ7jZ2o5f9",
+    "teamName": "Test"
+  },
+  "parentFolderId": null,
+  "isArchived": false
+}
