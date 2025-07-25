@@ -1,0 +1,30 @@
+{
+  "id": "omtptMEQGcYU6MbD",
+  "name": "wordflow 2 test",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "9b45e1fd-cb27-4c43-b640-b5296abd0ba4",
+      "name": "When clicking ‘Execute workflow’"
+    }
+  ],
+  "connections": {},
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "triggerCount": 0,
+  "versionId": "5e2f7b9b-3ce2-46fe-936e-4a1e3de88e2d",
+  "owner": {
+    "type": "team",
+    "teamId": "maRdd8WJ7jZ2o5f9",
+    "teamName": "Test"
+  },
+  "parentFolderId": null,
+  "isArchived": false
+}
